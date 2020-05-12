@@ -8,6 +8,9 @@
       <element id="extracted-dir" path="I:/commons-cli-1.4-bin/commons-cli-1.4/commons-cli-1.4-javadoc.jar" path-in-jar="/" />
       <element id="extracted-dir" path="I:/commons-cli-1.4-bin/commons-cli-1.4/commons-cli-1.4-sources.jar" path-in-jar="/" />
       <element id="extracted-dir" path="I:/commons-cli-1.4-bin/commons-cli-1.4/commons-cli-1.4-test-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="I:/gson-2.2.2.jar/gson-2.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/Software/java/commons-io-2.5/commons-io-2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/Software/java/commons-io-2.5/commons-io-2.5-javadoc.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

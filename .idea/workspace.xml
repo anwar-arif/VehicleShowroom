@@ -7,10 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e852e008-05d5-43b9-8fde-245ae3c4b451" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/VehicleShowroom_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/VehicleShowroom_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/VehicleShowroom_jar/VehicleShowroom.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/VehicleShowroom_jar/VehicleShowroom.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/CliController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/CliController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/ShowroomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/ShowroomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/services/FileStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/services/FileStorageService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/CliController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/CliController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/vehicle/showroom/services/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/services/FileStorageService.java" afterDir="false" />
@@ -46,15 +47,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="E:/Software/java/commons-io-2.5" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.vehicle.showroom.VehicleShowroom" />
       <module name="VehicleShowroom" />
-      <option name="PROGRAM_PARAMETERS" value="--list -vc" />
+      <option name="PROGRAM_PARAMETERS" value="-h" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -97,18 +99,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="125" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1589289352761" />
-    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589303672451">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589306371293">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1589303672451" />
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1589306371293" />
     <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1589291876539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1589291876539" />
-    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589280909536">
+    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589307005273">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1589280909536" />
+    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1589307005273" />
     <state x="513" y="81" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1589297811423">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -125,36 +127,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589297786916" />
-    <state width="1323" height="233" key="GridCell.Tab.0.bottom" timestamp="1589303714162">
+    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1589306957817">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589303714162" />
-    <state width="1323" height="233" key="GridCell.Tab.0.center" timestamp="1589303714162">
+    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589306957817" />
+    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1589306957817">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589303714162" />
-    <state width="1323" height="233" key="GridCell.Tab.0.left" timestamp="1589303714161">
+    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589306957817" />
+    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1589306957817">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589303714161" />
-    <state width="1323" height="233" key="GridCell.Tab.0.right" timestamp="1589303714162">
+    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589306957817" />
+    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1589306957817">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="233" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589303714162" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1589297813984">
+    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589306957817" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1589307833168">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1589297813984" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1589307833168" />
   </component>
 </project>

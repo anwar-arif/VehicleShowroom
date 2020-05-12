@@ -1,10 +1,14 @@
 package com.vehicle.showroom.services;
 
+import com.google.gson.Gson;
 import com.vehicle.showroom.model.Vehicle;
-import com.google.gson.*;
-import org.apache.commons.io.FileUtils;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +25,10 @@ public class FileStorageService {
         this.createFile();
     }
 
+    /**
+     * creates file in the directory
+     * @throws IOException
+     */
     public void createFile() throws IOException {
         File dir = new File(this.directory);
         if (!dir.exists()) {
@@ -32,6 +40,11 @@ public class FileStorageService {
         file.createNewFile();
     }
 
+    /**
+     * stores a vehicle in files as json
+     * @param vehicle
+     * @throws IOException
+     */
     public void saveVehicle(Vehicle vehicle) throws IOException {
         String json = new Gson().toJson(vehicle);
         FileWriter fileWriter = new FileWriter(filePath, true);
@@ -43,6 +56,11 @@ public class FileStorageService {
         System.out.println("Vehicle added successfully");
     }
 
+    /**
+     * deletes a vehicle from the file
+     * @param vehicle
+     * @throws IOException
+     */
     public void deleteVehicle(Vehicle vehicle) throws IOException {
         String json = new Gson().toJson(vehicle);
         boolean hasRemoved = false;
@@ -69,6 +87,11 @@ public class FileStorageService {
         System.out.println(hasRemoved ? "Vehicle removed successfully" : "No such vehicle found");
     }
 
+    /**
+     * gathers all vehicles information from the file
+     * @return a list of json string
+     * @throws IOException
+     */
     public List<String> getVehiclesAsJsonString() throws IOException {
         List<String> vehicles = new ArrayList<>();
         BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));

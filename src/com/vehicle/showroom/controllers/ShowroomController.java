@@ -14,33 +14,40 @@ public class ShowroomController {
 
     public ShowroomController() {}
 
+    /**
+     * Process the command line arguments with proper actions
+     * @param args
+     * @throws IOException
+     * @throws ParseException
+     */
     public void process(String[] args) throws IOException, ParseException {
         CliController cliController = new CliController();
-
         Options opt = cliController.getCliOptions();
+
         FileStorageService fileStorageService = new FileStorageService();
 
         BasicParser parser = new BasicParser();
-        CommandLine cl = parser.parse(opt, args);
+        CommandLine commandLine = parser.parse(opt, args);
 
-        if (cl.hasOption('h')) {
+        if (commandLine.hasOption('h')) {
             HelpFormatter f = new HelpFormatter();
             f.printHelp("Options Help", opt);
         }
-        else if (cl.hasOption("add") || cl.hasOption("remove")) {
-            String cliErrorMsg = cliController.validateCli(cl);
+        else if (commandLine.hasOption("add") || commandLine.hasOption("remove")) {
+            String cliErrorMsg = cliController.validateCli(commandLine);
             if (!cliErrorMsg.isEmpty()) {
                 System.out.println(cliErrorMsg);
+                System.out.println("See -h for help");
                 return;
             }
 
-            Vehicle vehicle = cliController.getVehicleFromCli(cl);
+            Vehicle vehicle = cliController.getVehicleFromCli(commandLine);
 
-            if (cl.hasOption("add")) fileStorageService.saveVehicle(vehicle);
+            if (commandLine.hasOption("add")) fileStorageService.saveVehicle(vehicle);
             else fileStorageService.deleteVehicle(vehicle);
         }
-        else if (cl.hasOption("list")) {
-            cliController.showVehicleList(fileStorageService, cl.hasOption("visitorCount"));
+        else if (commandLine.hasOption("list")) {
+            cliController.showVehicleList(fileStorageService, commandLine.hasOption("visitorCount"));
         }
     }
 }
