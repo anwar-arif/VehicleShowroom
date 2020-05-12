@@ -23,5 +23,26 @@
         <jarDirectory url="file://I:/commons-cli-1.4-bin/commons-cli-1.4" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gson">
+        <CLASSES>
+          <root url="jar://I:/gson-2.2.2.jar/gson-2.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Apache-commons-io">
+        <CLASSES>
+          <root url="file://E:/Software/java/commons-io-2.5" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://E:/Software/java/commons-io-2.5/docs" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://E:/Software/java/commons-io-2.5" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
