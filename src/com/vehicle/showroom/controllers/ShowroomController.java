@@ -23,22 +23,24 @@ public class ShowroomController {
         BasicParser parser = new BasicParser();
         CommandLine cl = parser.parse(opt, args);
 
-        String cliErrorMsg = cliController.validateCli(cl);
-        if (!cliErrorMsg.isEmpty()) {
-            System.out.println(cliErrorMsg);
-            return;
-        }
-
         if (cl.hasOption('h')) {
             HelpFormatter f = new HelpFormatter();
             f.printHelp("Options Help", opt);
-        } else if (cl.hasOption("add") || cl.hasOption("remove")) {
+        }
+        else if (cl.hasOption("add") || cl.hasOption("remove")) {
+            String cliErrorMsg = cliController.validateCli(cl);
+            if (!cliErrorMsg.isEmpty()) {
+                System.out.println(cliErrorMsg);
+                return;
+            }
+
             Vehicle vehicle = cliController.getVehicleFromCli(cl);
 
             if (cl.hasOption("add")) fileStorageService.saveVehicle(vehicle);
             else fileStorageService.deleteVehicle(vehicle);
-        } else if (cl.hasOption("list")) {
-
+        }
+        else if (cl.hasOption("list")) {
+            cliController.showVehicleList(fileStorageService, cl.hasOption("visitorCount"));
         }
     }
 }

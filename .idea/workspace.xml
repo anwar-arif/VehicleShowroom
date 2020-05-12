@@ -7,20 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e852e008-05d5-43b9-8fde-245ae3c4b451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/CliController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/services/FileStorageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VehicleShowroom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VehicleShowroom.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/company/CommandLineOptions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CommandLineOptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/VehicleShowroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/CliController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/CliController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/ShowroomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/controllers/ShowroomController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/services/FileStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehicleShowroom/com/vehicle/showroom/services/FileStorageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/CliController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/CliController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicle/showroom/services/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicle/showroom/services/FileStorageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.vehicle.showroom.VehicleShowroom" />
       <module name="VehicleShowroom" />
-      <option name="PROGRAM_PARAMETERS" value="-r -m model123 -et oil -vt sports -ep 250 -ts 50 -turbo true" />
+      <option name="PROGRAM_PARAMETERS" value="--list -vc" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -104,10 +97,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="125" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1589289352761" />
-    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589298818223">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589303672451">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1589298818223" />
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1589303672451" />
     <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1589291876539">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -132,22 +125,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589297786916" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1589298822617">
+    <state width="1323" height="233" key="GridCell.Tab.0.bottom" timestamp="1589303714162">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589298822617" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1589298822617">
+    <state width="1323" height="233" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589303714162" />
+    <state width="1323" height="233" key="GridCell.Tab.0.center" timestamp="1589303714162">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589298822617" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1589298822617">
+    <state width="1323" height="233" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589303714162" />
+    <state width="1323" height="233" key="GridCell.Tab.0.left" timestamp="1589303714161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589298822617" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1589298822617">
+    <state width="1323" height="233" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589303714161" />
+    <state width="1323" height="233" key="GridCell.Tab.0.right" timestamp="1589303714162">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589298822617" />
+    <state width="1323" height="233" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589303714162" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1589297813984">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -158,7 +151,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/vehicle/showroom/controllers/ShowroomController.java</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

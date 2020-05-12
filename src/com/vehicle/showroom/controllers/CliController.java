@@ -1,8 +1,18 @@
 package com.vehicle.showroom.controllers;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonWriter;
 import com.vehicle.showroom.model.Vehicle;
+import com.vehicle.showroom.services.FileStorageService;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Options;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 public class CliController {
     public Options getCliOptions() {
@@ -24,9 +34,28 @@ public class CliController {
         opt.addOption("turbo",true, "Is Turbo");
 
         opt.addOption("ls", "list", false, "List of vehicles");
+        opt.addOption("vc", "visitorCount", false, "Show list of vehicles with visitor count");
 
 //        -a -m model123 -et oil -vt sports -ep 150 -ts 50 -turbo true
         return opt;
+    }
+
+    public void showVehicleList(FileStorageService fileStorageService, boolean showVisitor) throws IOException {
+        List<String> vehicles = fileStorageService.getVehiclesAsJsonString();
+        int visitorCount = 30;
+
+        for (String vehicle: vehicles) {
+            JsonObject jsonObject = new JsonParser().parse(vehicle).getAsJsonObject();
+
+            for (Map.Entry<String, JsonElement> item: jsonObject.entrySet()) {
+                System.out.print(item.getKey() + ": " + item.getValue().toString() + " ");
+
+                if (item.getValue().equals("sports")) visitorCount += 20;
+            }
+            if (showVisitor) System.out.print("visitor count: " + visitorCount);
+
+            System.out.println();
+        }
     }
 
     public Vehicle getVehicleFromCli(CommandLine cl) {

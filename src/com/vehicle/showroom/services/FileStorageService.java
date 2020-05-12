@@ -5,11 +5,12 @@ import com.google.gson.*;
 import org.apache.commons.io.FileUtils;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FileStorageService {
-    public String directory;
-    public String filePath;
+    private String directory;
+    private String filePath;
 
     public FileStorageService() throws IOException {
         this.directory = System.getProperty("user.home") + File.separator + "Documents" +
@@ -66,5 +67,21 @@ public class FileStorageService {
         bufferedWriter.close();
 
         System.out.println(hasRemoved ? "Vehicle removed successfully" : "No such vehicle found");
+    }
+
+    public List<String> getVehiclesAsJsonString() throws IOException {
+        List<String> vehicles = new ArrayList<>();
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
+
+        String currentLine;
+        String trimmedLine;
+
+        while ((currentLine = bufferedReader.readLine()) != null) {
+            trimmedLine = currentLine.trim();
+            vehicles.add(trimmedLine);
+        }
+        bufferedReader.close();
+
+        return vehicles;
     }
 }
