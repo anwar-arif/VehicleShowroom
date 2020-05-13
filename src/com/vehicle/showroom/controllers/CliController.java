@@ -69,6 +69,9 @@ public class CliController {
 
             System.out.println();
         }
+        if (vehicles.isEmpty()) {
+            System.out.println("No vehicles to show");
+        }
     }
 
     /**
